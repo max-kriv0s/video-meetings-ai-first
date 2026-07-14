@@ -14,6 +14,9 @@
     "lint:api": "npm run lint --workspace api",
     "lint": "npm run lint:web && npm run lint:api",
     "format:web": "npm run format --workspace web",
-    "format:api": "npm run format --workspace api"
+    "format:api": "npm run format --workspace api",
+    "test:api": "npm run test --workspace api && npm run test:e2e --workspace api",
+    "test:web": "npm run test --workspace web",
+    "test": "npm run test:api && npm run test:web"
   }
 }

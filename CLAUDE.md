@@ -31,9 +31,11 @@ npm run lint:web
 
 npm run format:api        # prettier --write
 npm run format:web
-```
 
-There is no root-level test script. Run tests inside `apps/api` (the only app with tests) — see `apps/api/CLAUDE.md`.
+npm run test              # runs test:api then test:web
+npm run test:api          # jest unit tests + jest e2e tests (apps/api)
+npm run test:web          # apps/web has no test framework yet; currently a no-op placeholder
+```
 
 To run a script directly against one workspace instead of using the root aliases: `npm run <script> --workspace api` or `--workspace web`.
 
